@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #f4f4f4;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        nav ul li a:hover {
+            background-color: #ddd;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>User Management Dashboard</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/users">List Users</a></li>
+            <li><a href="/create-user">Create User</a></li>
+            <li><a href="/edit-user/1">Edit User</a></li> <!-- Replace "1" with dynamic user ID -->
+            <li><a href="/profile/1">User Profile</a></li> <!-- Replace "1" with dynamic user ID -->
+            <li><a href="/edit-profile/1">Edit Profile</a></li> <!-- Replace "1" with dynamic user ID -->
+        </ul>
+    </nav>
+    <div class="container">
+        <!-- Content will be dynamically loaded here based on navigation -->
+        <h2>Welcome to User Management Dashboard!</h2>
+        <p>Select an option from the navigation above.</p>
+    </div>
+</body>
+</html>
